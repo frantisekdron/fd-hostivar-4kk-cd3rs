@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Ke schválení · Hostivař 4+kk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+/* Schvalovací list Hostivař – univerzální (bez značky makléře), bloky pod sebou, každý končí řádkem „Schvaluji“ */
+:root{
+  --bg:#f3f3f1;--paper:#fff;--ink:#1f2226;--muted:#5f6368;--line:#dcdcd8;
+  --acc:#8a6d3b;--acc-soft:#f1e9da;--graf:#26262a;--gold:#8a6d3b;--gold-soft:#d9c39a;--pine:#26262a;--sand:#8a6d3b;--sand-soft:#f1e9da;
+  --display:"Young Serif",Georgia,serif;--body:"Figtree",-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.narrow{max-width:68ch}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,3rem)}
+h2{font-size:clamp(1.5rem,3.2vw,2.1rem)}
+h3{font-size:1.15rem}
+p{margin:0}
+.eyebrow{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--acc)}
+.stack{display:flex;flex-direction:column;gap:12px}
+.note{font-size:.85rem;color:var(--muted)}
+header{padding-block:44px 30px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.toc a{font-size:.85rem;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.toc a:hover{border-color:var(--acc)}
+section{padding-block:44px;border-top:1px solid var(--line)}
+.num{font-family:var(--display);color:var(--acc);font-size:1rem;margin-right:8px}
+.ok{display:flex;align-items:center;gap:14px;margin-top:22px;background:var(--paper);border:2px solid var(--acc);border-radius:10px;padding:14px 18px;width:fit-content;max-width:100%}
+.ok .bx{flex:none}
+.ok .bx i{width:26px!important;height:26px!important;border-width:2px!important}
+.ok label{font-weight:700;cursor:pointer}
+.ok small{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+video.vid{width:100%;display:block;margin-top:22px;border-radius:10px;background:#000;aspect-ratio:16/9;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.tabs{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+.tabs button{font:600 .9rem var(--body);border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--graf);color:#fff;border-color:var(--graf)}
+.tit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.tit article{background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden;min-width:0;cursor:pointer}
+.tit img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.tit div{padding:10px 14px}
+.tit .k{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--acc)}
+.tit b{display:block}
+.tit span{font-size:.84rem;color:var(--muted)}
+.mapy{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.mapy figure{margin:0;min-width:0}
+.mapy img{width:100%;display:block;border-radius:8px}
+.mapy figcaption{font-size:.82rem;color:var(--muted);margin-top:6px}
+.dl{background:var(--paper);border:2px solid var(--graf);border-radius:10px;padding:22px 24px;margin-top:26px}
+.dl .btns{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 4px}
+.dl a.b{display:inline-block;background:var(--graf);color:#fff;font-weight:700;text-decoration:none;padding:10px 16px;border-radius:9px;font-size:.92rem}
+.dl a.b.o{background:transparent;color:var(--ink);border:2px solid var(--graf)}
+.voblock{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin-top:16px;max-width:860px;overflow:hidden}
+.voblock table{width:100%;border-collapse:collapse;font-size:.94rem}
+.voblock td{padding:8px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.voblock td:first-child{white-space:nowrap;color:var(--muted);font-variant-numeric:tabular-nums;width:1%}
+.voblock td:last-child{font-style:italic;color:#2c3a36}
+audio{width:100%;max-width:860px;margin-top:14px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.facts div{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;min-width:0}
+.facts b{display:block;font-family:var(--display);font-weight:400;font-size:1.3rem}
+.facts span{font-size:.84rem;color:var(--muted)}
+.pending{background:var(--acc-soft);border-radius:8px;padding:14px 18px;margin-top:18px;font-size:.92rem}
+footer{padding-block:36px 90px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+@media (max-width:760px){.tit,.mapy{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}}
+</style>
+
+</head>
+<body>
+<header class="wrap">
+  <div class="stack narrow">
+    <p class="eyebrow">Bartoš · Praha 10 – Hostivař · ke schválení</p>
+    <h1>Byt 4+kk se zahradou: titulky, body zájmu a komentář</h1>
+    <p>Ahoj, tady je první várka k videu na šířku. Střih a barvy jsou tvoje beze změny, přidali jsme titulky v univerzálním stylu (bez vizitky makléře), hudbu s pořádným koncem, body zájmu z dronu a 3D mapu okolí. Komentář napsal ChatGPT a je zatím jen ve druhé verzi videa. U každého bloku je „Schvaluji“, připomínky piš přes tlačítko <b>Komentář</b> vlevo dole.</p>
+  </div>
+  <nav class="toc" aria-label="Obsah">
+    <a href="#video">1 Video</a><a href="#titulky">2 Titulky</a><a href="#poi">3 Body zájmu</a><a href="#kolac">4 3D mapa okolí</a><a href="#vo">5 Komentář</a><a href="#hudba">6 Hudba</a>
+  </nav>
+  <div class="dl" id="stazeni">
+    <h2 style="font-size:1.4rem">Ke stažení</h2>
+    <div class="btns">
+      <a class="b" href="../video/Hostivar_titulky_v1.mp4" download>Video s titulky (MP4)</a>
+      <a class="b" href="../video/Hostivar_titulky_v1_VO.mp4" download>Video s komentářem (MP4)</a>
+      <a class="b o" href="../stazeni/Hostivar_body_zajmu_mesto.jpg" download>Body zájmu · město (3072 px)</a>
+      <a class="b o" href="../stazeni/Hostivar_body_zajmu_priroda.jpg" download>Body zájmu · příroda (3072 px)</a>
+      <a class="b o" href="../stazeni/Hostivar_3D_mapa_okoli.jpg" download>3D mapa okolí (obrázek)</a>
+      <a class="b o" href="../stazeni/Hostivar_komentar.mp3" download>Komentář (MP3)</a>
+      <a class="b o" href="../stazeni/Hostivar_titulky_reci.srt" download>Titulky řeči (SRT)</a>
+    </div>
+    <p class="note">Ve videu jsou náhledy (web). Plné verze jsou v DaVinci: projekt „Bartoš-Hostivař 25fps“, timeline „Hostivař TITULKY v1 (kopie Timeline 1)“ a „… + VO + titulky řeči“. Tvoje „Timeline 1“ je netknutá.</p>
+  </div>
+</header>
+
+<section id="video">
+  <div class="wrap">
+    <div class="stack narrow">
+      <h2><span class="num">1</span>Video na šířku</h2>
+      <p>Délka 1:21 podle tvého střihu. Hudba je ta stejná (harrak), jen z naší knihovny, a na konci jsme ji střihli o 20 taktů dopředu do závěrečné fráze, ať video dohraje do konce a neutne se uprostřed. Druhá verze má navíc komentář a titulky toho, co hlas říká.</p>
+    </div>
+    <div class="tabs" role="group" aria-label="Verze videa">
+      <button type="button" aria-pressed="true" data-src="../video/Hostivar_titulky_v1.mp4">Titulky + hudba</button>
+      <button type="button" aria-pressed="false" data-src="../video/Hostivar_titulky_v1_VO.mp4">+ komentář a titulky řeči</button>
+    </div>
+    <video class="vid" id="hlavni" controls preload="metadata" playsinline poster="../img/poster.jpg" src="../video/Hostivar_titulky_v1.mp4"></video>
+    <div class="ok"><span class="bx" data-k="Video titulky v1"></span><label>Schvaluji video s titulky<small>Střih beze změny, titulky, zvuky k titulkům, konec hudby.</small></label></div>
+    <div class="ok"><span class="bx" data-k="Video s komentářem"></span><label>Chci verzi s komentářem<small>Když ne, zůstane video jen s hudbou.</small></label></div>
+  </div>
+</section>
+
+<section id="titulky">
+  <div class="wrap">
+    <div class="stack narrow">
+      <h2><span class="num">2</span>Titulky: 5 normálních, 5 v prostoru</h2>
+      <p>Univerzální styl bez značky makléře: tenký bílý rámeček s průsvitnou grafitovou výplní (žádná plná „vlajka“), Montserrat. Trackované titulky sedí v prostoru a předměty v popředí je zakrývají: věže města, židle a stůl, postel, sloupek pergoly se záclonou. Každý titulek má jemný pop zvuk. Údaje jsou jen z inzerátu. Klikni na obrázek a video skočí na titulek.</p>
+    </div>
+    <div class="tit">
+      <article data-t="0.3"><img src="../img/t_D0.jpg" alt="Titulek PRAHA 10 za panoramatem města" loading="lazy"><div><span class="k">v prostoru · 0:00</span><b>PRAHA 10</b><span>Vyroste zpoza panoramatu, věže ho zakrývají.</span></div></article>
+      <article data-t="2.8"><img src="../img/t_N1.jpg" alt="Titulek 4+KK 130 m²" loading="lazy"><div><span class="k">normální · 0:02</span><b>PRODEJ BYTU · 4+KK · 130 m²</b><span>Přízemí s vlastní zahradou.</span></div></article>
+      <article data-t="14.2"><img src="../img/t_K6.jpg" alt="Titulek 45 m² na kuchyňském ostrůvku" loading="lazy"><div><span class="k">v prostoru · 0:13</span><b>OBÝVACÍ POKOJ S KUCHYNÍ · 45 m²</b><span>Na čele ostrůvku, zakrývá ho židle.</span></div></article>
+      <article data-t="17.3"><img src="../img/t_N2.jpg" alt="Titulek spotřebiče Miele" loading="lazy"><div><span class="k">normální · 0:16</span><b>SPOTŘEBIČE MIELE</b><span>Kuchyň s ostrůvkem.</span></div></article>
+      <article data-t="41.2"><img src="../img/t_B19.jpg" alt="Titulek LOŽNICE na stěně za postelí" loading="lazy"><div><span class="k">v prostoru · 0:40</span><b>LOŽNICE · VESTAVĚNÉ SKŘÍNĚ</b><span>Na stěně u dveří, vyjede zpoza postele.</span></div></article>
+      <article data-t="54.7"><img src="../img/t_N3.jpg" alt="Titulek 2 koupelny" loading="lazy"><div><span class="k">normální · 0:53</span><b>2 KOUPELNY</b><span>+ samostatné WC.</span></div></article>
+      <article data-t="62.7"><img src="../img/t_G31.jpg" alt="Titulek 188 m² na plotě zahrady" loading="lazy"><div><span class="k">v prostoru · 1:01</span><b>VLASTNÍ ZAHRADA · 188 m²</b><span>Na zeleném plotě, přejede přes něj sloupek a záclona.</span></div></article>
+      <article data-t="71.6"><img src="../img/t_N4.jpg" alt="Titulek 2 garážová stání" loading="lazy"><div><span class="k">normální · 1:10</span><b>2 GARÁŽOVÁ STÁNÍ</b><span>Podzemní garáž.</span></div></article>
+      <article data-t="74.3"><img src="../img/t_N5.jpg" alt="Titulek rok 2014 PENB B" loading="lazy"><div><span class="k">normální · 1:13</span><b>ROK 2014 · PENB B</b><span>Cihlový bytový dům, velmi úsporná budova.</span></div></article>
+      <article data-t="77.8"><img src="../img/t_D37.jpg" alt="Titulek HOSTIVAŘ za obzorem" loading="lazy"><div><span class="k">v prostoru · 1:17</span><b>HOSTIVAŘ</b><span>Stojí za obzorem, věž sídliště jím prochází.</span></div></article>
+    </div>
+    <div class="ok"><span class="bx" data-k="Titulky"></span><label>Schvaluji titulky<small>Styl i texty. Když chceš jiné slovo nebo jiný záběr, napiš do komentáře.</small></label></div>
+  </div>
+</section>
+
+<section id="poi">
+  <div class="wrap">
+    <div class="stack narrow">
+      <h2><span class="num">3</span>Body zájmu z dronu</h2>
+      <p>Dvě tvoje nabarvené fotky z dronu. Body jsou promítnuté podle polohy kamery z fotky a místa z OpenStreetMap, časy pěšky jsou změřené po cestách. Dům jsme ověřili ve dvou fotkách (GPS v inzerátu je jen na ulici, asi 55 m vedle).</p>
+    </div>
+    <div class="mapy">
+      <figure><a href="../stazeni/Hostivar_body_zajmu_mesto.jpg" target="_blank" rel="noopener"><img src="../img/poi_mesto.jpg" alt="Fotka z dronu s body zájmu: byt, Lidl hned vedle 3 min pěšky, VIVO! Hostivař 13 min pěšky, metro Skalka 3,7 km, centrum Prahy 9,6 km" loading="lazy"></a><figcaption>Město · Lidl 3 min, VIVO! Hostivař 13 min pěšky, metro Skalka 3,7 km, centrum 9,6 km</figcaption></figure>
+      <figure><a href="../stazeni/Hostivar_body_zajmu_priroda.jpg" target="_blank" rel="noopener"><img src="../img/poi_priroda.jpg" alt="Fotka z dronu s body zájmu: byt, tramvaj Hostivařská 5 min pěšky, lesopark a Hostivařská přehrada 2,4 km" loading="lazy"></a><figcaption>Příroda · tramvaj 5 min pěšky, lesopark a Hostivařská přehrada 2,4 km</figcaption></figure>
+    </div>
+    <div class="facts">
+      <div><b>3 min</b><span>Lidl (hned vedle)</span></div>
+      <div><b>5 min</b><span>tramvaj Hostivařská</span></div>
+      <div><b>7 min</b><span>MŠ Trhanovské náměstí</span></div>
+      <div><b>13 min</b><span>VIVO! Hostivař</span></div>
+      <div><b>14 min</b><span>ZŠ Hostivař</span></div>
+      <div><b>17 min</b><span>přírodní památka Meandry Botiče</span></div>
+    </div>
+    <p class="note" style="margin-top:10px">Časy pěšky podle tras OpenStreetMap (OSRM). Autem neuvádíme minuty, v Praze záleží na provozu.</p>
+    <div class="ok"><span class="bx" data-k="Body zájmu"></span><label>Schvaluji body zájmu<small>Obě fotky do inzerátu a na sítě.</small></label></div>
+  </div>
+</section>
+
+<section id="kolac">
+  <div class="wrap">
+    <div class="stack narrow">
+      <h2><span class="num">4</span>3D mapa okolí („koláč“)</h2>
+      <p>Skutečné ortofoto ČÚZK na reliéfu, náklon na diorama a trasa k Hostivařské přehradě. Do videu jsme ji zatím nevkládali, střih zůstává tvůj. Hodí se jako samostatný záběr nebo obrázek do inzerátu.</p>
+    </div>
+    <video class="vid" controls preload="metadata" playsinline poster="../img/kolac_3d.jpg" src="../video/Hostivar_mapa_okoli.mp4"></video>
+    <div class="mapy" style="grid-template-columns:1fr"><figure><a href="../stazeni/Hostivar_3D_mapa_okoli.jpg" target="_blank" rel="noopener"><img src="../img/kolac_3d.jpg" alt="3D mapa okolí Hostivaře s trasou k Hostivařské přehradě a časy pěšky" loading="lazy"></a><figcaption>Obrázek do inzerátu (klik = plné rozlišení)</figcaption></figure></div>
+    <div class="ok"><span class="bx" data-k="3D mapa"></span><label>Schvaluji 3D mapu<small>Napiš, jestli ji chceš i do videa (třeba před závěrečný dron).</small></label></div>
+  </div>
+</section>
+
+<section id="vo">
+  <div class="wrap">
+    <div class="stack narrow">
+      <h2><span class="num">5</span>Komentář (text napsal ChatGPT)</h2>
+      <p>Text napsal ChatGPT podle faktů z inzerátu a časů střihu, my jsme do něj nepsali. Sám navrhl opravu „ve výhradním užívání“ u zahrady a stání a rok stavby nechal jen v titulku. Namluvené hlasem Pohádkář v ElevenLabs. Hlas začíná až po úvodním dronu a dozní v 1:20.</p>
+    </div>
+    <audio controls preload="none" src="../stazeni/Hostivar_komentar.mp3"></audio>
+    <div class="voblock"><table>
+      <tr><td>0:05</td><td>V klidné části pražské Hostivaře na vás čeká prostorný byt čtyři plus ká ká, o rozloze sto třiceti metrů čtverečních.</td></tr>
+      <tr><td>0:16</td><td>S kuchyní vybavenou spotřebiči Miele.</td></tr>
+      <tr><td>0:19</td><td>Velkorysý obývací prostor nabízí dostatek místa pro společné chvíle.</td></tr>
+      <tr><td>0:25</td><td>Tři samostatné pokoje vám dávají svobodu vytvořit domov přesně podle vašich potřeb.</td></tr>
+      <tr><td>0:32</td><td>První koupelna nabízí vanu.</td></tr>
+      <tr><td>0:35</td><td>Ať už hledáte pohodlnou ložnici, dětský pokoj, nebo klidnou pracovnu, prostoru je tu dost.</td></tr>
+      <tr><td>0:43</td><td>Praktické zázemí doplňuje prostorná předsíň, samostatná toaleta a komora. Byt je navíc částečně zařízený.</td></tr>
+      <tr><td>0:53</td><td>Druhá koupelna se sprchovým koutem přináší další pohodlí pro každodenní život.</td></tr>
+      <tr><td>1:00</td><td>Skutečným bonusem je zahrada o sto osmdesáti osmi metrech čtverečních ve výhradním užívání. Pro odpočinek i dětské hry.</td></tr>
+      <tr><td>1:08</td><td>Přímo u vašeho domova.</td></tr>
+      <tr><td>1:11</td><td>Ve výhradním užívání jsou také dvě garážová stání.</td></tr>
+      <tr><td>1:15</td><td>Klidná Hostivař, přehrada a lesopark v širším okolí. Přijďte na prohlídku.</td></tr>
+    </table></div>
+    <p class="note" style="margin-top:10px">Titulky řeči jsou dole uprostřed. Když je zrovna vidět rámečkový titulek vlevo dole, jdou doprava, takže se nepotkají. Trackované titulky jsou výš v obraze.</p>
+    <div class="ok"><span class="bx" data-k="Komentář"></span><label>Schvaluji komentář<small>Text, hlas i titulky řeči.</small></label></div>
+  </div>
+</section>
+
+<section id="hudba">
+  <div class="wrap">
+    <div class="stack narrow">
+      <h2><span class="num">6</span>Hudba</h2>
+      <p>V tvé timeline byla „harrak(Ref).mp3“ z cizího počítače, takže byla offline. V naší knihovně je pod stejným jménem víckrát, ta tvoje je varianta <b>dcbdb9cc</b> (stejná délka 2:19,7, zvuk se shoduje na 100 %). Přelinkovali jsme ji. Skladba sama končí natvrdo v 2:17, proto jsme ji v 1:08 střihli na kopáku o 20 taktů dopředu: přijde break a závěrečná fráze, která dohraje na posledním dronu. Původní hudba v kopii timeline zůstala, jen je vypnutá.</p>
+    </div>
+    <div class="ok"><span class="bx" data-k="Hudba"></span><label>Schvaluji konec hudby<small>Master zvuku (−14 LUFS) uděláme až po schválení všeho.</small></label></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>František Dron s.r.o. · podklady: inzerát sreality č. 2253746252, tvoje záběry a fotky z 19. 11. 2026 · mapy © ČÚZK, © OpenStreetMap contributors.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+  var v=document.getElementById('hlavni'),t=v.currentTime,pl=!v.paused;
+  document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+  v.src=b.dataset.src;v.addEventListener('loadedmetadata',function f(){v.currentTime=t;if(pl)v.play();v.removeEventListener('loadedmetadata',f)});
+});});
+document.querySelectorAll('.tit article').forEach(function(a){a.addEventListener('click',function(){
+  var v=document.getElementById('hlavni');v.scrollIntoView({behavior:'smooth',block:'center'});v.currentTime=parseFloat(a.dataset.t);v.play();
+});});
+</script>
+<!-- Webová nabídka FrantišekDron: zaškrtnutí v tabulce (posílá se samo) a komentář z plovoucího tlačítka → ntfy,
+     přehrávání videí v okně, konec platnosti. Vyplňuje webkit.feedback(); ty = tykání|vykání. -->
+<style>
+  .webonly{display:inline}.pdfonly{display:none}
+  @media screen{.pg{min-height:0}.pgfoot{margin-top:18px}}
+  .bx input{position:absolute;opacity:0;width:0;height:0}
+  .byty .bx::before{display:none}
+  .bx{position:relative;cursor:pointer}
+  .bx i{width:20px;height:20px;border:1.5px solid var(--gold);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:background .15s}
+  .bx input:checked+i{background:var(--gold)}
+  .bx input:checked+i::after{content:"✓";color:#14180f;font-weight:700;font-size:13px;font-style:normal}
+  .bx input:focus-visible+i{outline:2px solid var(--gold-soft);outline-offset:2px}
+  [data-vimeo] figure,[data-vimeo].ref{cursor:pointer}
+  .vmodal{position:fixed;inset:0;z-index:200;background:rgba(5,8,6,.92);display:none;align-items:center;justify-content:center;padding:20px}
+  .vmodal.on{display:flex}
+  .vmodal .box{position:relative;height:min(86vh,1000px);aspect-ratio:9/16;max-width:94vw}
+  .vmodal iframe{width:100%;height:100%;border:0;border-radius:6px;background:#000}
+  .vmodal .x{position:absolute;top:-14px;right:-14px;width:36px;height:36px;border-radius:50%;border:1px solid var(--gold);background:#0e1310;color:var(--gold-soft);font-size:18px;cursor:pointer}
+  .cm{position:fixed;inset:0;z-index:150;background:rgba(5,8,6,.78);display:none;align-items:flex-end;justify-content:flex-start;padding:22px}
+  .cm.on{display:flex}
+  .cm .box{position:relative;width:min(440px,100%);background:#131a15;border:1px solid var(--gold);border-radius:10px;padding:18px 20px 16px;margin-bottom:56px;box-shadow:0 24px 60px -20px rgba(0,0,0,.8)}
+  .cm h3{font-size:24px;margin:0 0 2px}
+  .cm .x{position:absolute;top:10px;right:12px;background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer}
+  .cm textarea,.cm input[type=text]{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:6px;color:var(--ink);font:400 14.5px Inter,sans-serif;padding:11px 13px;margin-top:10px}
+  .cm textarea{min-height:110px;resize:vertical}
+  .cm textarea:focus,.cm input:focus{outline:none;border-color:var(--gold)}
+  .cm .send{margin-top:12px;background:linear-gradient(180deg,#c9ad6e,#a8894b);color:#14180f;border:none;border-radius:40px;padding:11px 22px;font:600 14px Inter,sans-serif;cursor:pointer}
+  .cm .send[disabled]{opacity:.6;cursor:default}
+  .cm .st{display:block;margin-top:8px;font-size:13px;color:var(--green)}
+  .cm .st.err{color:#e08a6a}
+  .cm .note{font-size:11.5px;color:var(--muted2);margin-top:4px}
+  #fbgo{position:fixed;left:22px;bottom:22px;z-index:99;background:#0e1310;color:var(--gold-soft);border:1px solid var(--gold);border-radius:40px;padding:12px 20px;font:600 13.5px Inter,sans-serif;cursor:pointer;box-shadow:0 12px 30px -8px rgba(0,0,0,.7);text-decoration:none}
+  a#dlpdf{text-decoration:none}
+  .expired{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}
+  .expired h1{font-size:40px;margin:18px 0 8px}
+  @media(max-width:860px){.grid2,.cols,.price,.vo,.pair{grid-template-columns:1fr!important;gap:16px!important}.poi .it{grid-template-columns:1fr!important;gap:2px!important}.hero h1{font-size:34px!important}.hero{min-height:560px}.pgfoot{display:none}}
+  @media(max-width:860px){#fbgo{left:12px;bottom:12px;padding:10px 14px}#dlpdf{right:12px!important;bottom:12px!important;padding:10px 14px!important}.cm{padding:12px}}
+</style>
+
+<button id="fbgo" type="button">💬 Komentář</button>
+<div class="cm" id="cm"><div class="box">
+  <button class="x" id="cmx" aria-label="Zavřít">✕</button>
+  <h3>Napiš nám komentář</h3>
+  <div class="note">Zaškrtnutí v tabulce bytů se nám posílá samo. Odkaz platí do 23. 12. 2026.</div>
+  <textarea id="fbtext" placeholder="Dotaz, připomínka, nebo co chceš zkombinovat…"></textarea>
+  <input type="text" id="fbname" placeholder="Jméno nebo telefon (nepovinné)">
+  <button class="send" id="fbsend">Odeslat FrantišekDron</button><span class="st" id="fbst"></span>
+</div></div>
+<div class="vmodal" id="vmodal"><div class="box"><button class="x" id="vx" aria-label="Zavřít">✕</button><iframe id="vfr" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>
+
+<script>
+(function(){
+  var TOPIC='fd-nabidky-48c2f0103d78', OFFER='Hostivař 4+kk · schválení', EXPIRES='2026-12-23';
+  var KEY='fdn:'+location.pathname, q=new URLSearchParams(location.search), me=q.has('fd');
+  if(new Date()>new Date(EXPIRES+'T00:00:00')){
+    document.body.innerHTML='<div class="expired"><div><div class="eyebrow" style="display:inline-block">FrantišekDron</div><h1>Platnost odkazu skončila</h1><p>Napiš nám a pošleme aktuální nabídku: honza@frantisekdron.cz · +420 723 707 958</p></div></div>';
+    return;
+  }
+  var st={}; try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+  function ping(title,msg,tags){
+    return fetch('https://ntfy.sh/',{method:'POST',body:JSON.stringify({topic:TOPIC,title:title,message:msg,tags:tags||[],click:location.origin+location.pathname})});
+  }
+  function dev(){var u=navigator.userAgent;return (/iPhone|iPad/.test(u)?'iPhone/iPad':/Android/.test(u)?'Android':/Mac/.test(u)?'Mac':/Windows/.test(u)?'Windows':'jiné')+(/Mobi/.test(u)?', mobil':'')}
+  // zaškrtávátka — každá změna se nám odešle sama (5 s po posledním kliknutí, při zavření stránky hned)
+  st.ticks=st.ticks||{};
+  var boxes=document.querySelectorAll('.bx[data-k]'), timer=null;
+  boxes.forEach(function(el){
+    var k=el.getAttribute('data-k');
+    el.innerHTML='<input type="checkbox" aria-label="'+k+'"><i></i>';
+    var cb=el.querySelector('input'); cb.checked=!!st.ticks[k];
+    el.addEventListener('click',function(e){ if(e.target!==cb){cb.checked=!cb.checked;} st.ticks[k]=cb.checked; save(); sum(); clearTimeout(timer); timer=setTimeout(sendTicks,5000); });
+  });
+  function ticked(){return Object.keys(st.ticks).filter(function(k){return st.ticks[k]})}
+  function tickMsg(){var t=ticked(); return 'Zaškrtnuto: '+(t.length?t.join(', '):'nic');}
+  function sendTicks(beacon){
+    timer=null; var m=tickMsg(); if(m===st.sentTicks) return;
+    var body=JSON.stringify({topic:TOPIC,title:OFFER+' · zaškrtnutí',message:m,tags:['ballot_box_with_check'],click:location.origin+location.pathname});
+    if(beacon&&navigator.sendBeacon){ if(navigator.sendBeacon('https://ntfy.sh/',body)){st.sentTicks=m;save();} return; }
+    fetch('https://ntfy.sh/',{method:'POST',body:body}).then(function(r){if(r.ok){st.sentTicks=m;save();}}).catch(function(){});
+  }
+  addEventListener('pagehide',function(){ if(timer){clearTimeout(timer);sendTicks(true);} });
+  document.addEventListener('visibilitychange',function(){ if(document.visibilityState==='hidden'&&timer){clearTimeout(timer);sendTicks(true);} });
+  function sum(){
+    var t=ticked(), el=document.getElementById('fbsum'); if(!el) return;
+    el.innerHTML=boxes.length?(t.length?'Zaškrtnuto: <b>'+t.join(', ')+'</b>.':'V tabulce zatím nic zaškrtnuté.'):'';
+  }
+  var ta=document.getElementById('fbtext'), nm=document.getElementById('fbname');
+  ta.value=st.text||''; nm.value=st.name||'';
+  ta.addEventListener('input',function(){st.text=ta.value;save()}); nm.addEventListener('input',function(){st.name=nm.value;save()});
+  sum();
+  document.getElementById('fbsend').addEventListener('click',function(){
+    var b=this, s=document.getElementById('fbst'), t=ticked();
+    if(!ta.value.trim()&&!t.length){s.className='st err';s.textContent='Napiš komentář, nebo něco zaškrtni.';return}
+    var msg=(ta.value.trim()?'Komentář: '+ta.value.trim()+'\n':'')+(boxes.length?tickMsg()+'\n':'')+(nm.value.trim()?'Od: '+nm.value.trim():'');
+    b.disabled=true; s.className='st'; s.textContent='Odesílám…'; clearTimeout(timer); timer=null;
+    ping(OFFER+' · komentář klienta',msg.trim(),['speech_balloon']).then(function(r){
+      if(!r.ok) throw 0; s.textContent='Odesláno, díky. Ozveme se.'; st.sent=new Date().toISOString(); st.sentTicks=tickMsg(); save();
+    }).catch(function(){s.className='st err';s.textContent='Nepodařilo se odeslat. Napiš prosím na honza@frantisekdron.cz.'}).finally(function(){b.disabled=false});
+  });
+  var cm=document.getElementById('cm');
+  document.getElementById('fbgo').addEventListener('click',function(){cm.classList.add('on');setTimeout(function(){ta.focus()},50)});
+  document.getElementById('cmx').addEventListener('click',function(){cm.classList.remove('on')});
+  cm.addEventListener('click',function(e){if(e.target===cm)cm.classList.remove('on')});
+  // první otevření (ne u odkazu s ?fd)
+  if(!me&&!st.opened){ st.opened=1; save(); ping(OFFER+' · nabídka otevřena','Někdo otevřel webovou nabídku ('+dev()+').',['eyes']).catch(function(){}); }
+  // videa v okně
+  var vm=document.getElementById('vmodal'), vf=document.getElementById('vfr');
+  function openV(id,h){ vf.src='https://player.vimeo.com/video/'+id+'?h='+h+'&autoplay=1&title=0&byline=0&portrait=0'; vm.classList.add('on'); }
+  function closeV(){ vm.classList.remove('on'); vf.src='about:blank'; }
+  document.querySelectorAll('[data-vimeo]').forEach(function(el){
+    el.addEventListener('click',function(e){ e.preventDefault(); openV(el.getAttribute('data-vimeo'),el.getAttribute('data-h')); });
+  });
+  document.getElementById('vx').addEventListener('click',closeV);
+  vm.addEventListener('click',function(e){if(e.target===vm)closeV()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeV();cm.classList.remove('on')}});
+})();
+</script>
+
+</body>
+</html>
